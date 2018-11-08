@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# ex2a
+# ex2b.rb
 #
-# ランダムな方向にPUTかLOOKかSEARCHする。
+# 直進して壁に当たったら壁の無い方向へ曲がる。
 # 上下左右に敵が来たらPUTする。
 
 require_relative 'CHaserConnect.rb' # CHaserConnect.rbを読み込む Windows
@@ -26,7 +26,7 @@ M_BLOCK = 2
 M_ITEM = 3
 
 # サーバに接続
-@target = CHaserConnect.new("ex2a") # この名前を4文字までで変更する
+@target = CHaserConnect.new("ex2b") # この名前を4文字までで変更する
 
 @values = Array.new(10) # getReady の結果を受ける。
 @results = Array.new(10) # アクションの結果を受ける。
